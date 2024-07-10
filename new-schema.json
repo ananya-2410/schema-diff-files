@@ -54,11 +54,11 @@
             {
                 "kind": "OBJECT",
                 "name": "Post",
-                "description": "",
+                "description": "post of object type",
                 "fields": [
                     {
                         "name": "id",
-                        "description": "",
+                        "description": "id of post obj",
                         "args": [],
                         "type": {
                             "kind": "SCALAR",
