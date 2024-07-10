@@ -4,44 +4,46 @@
         "queryType": {
           "name": "Query"
         },
-        "mutationType": {
-          "name": "Mutation"
-        },
+        "mutationType": null,
+        "subscriptionType": null,
         "types": [
           {
             "kind": "OBJECT",
             "name": "Query",
             "fields": [
               {
-                "name": "user",
+                "name": "allFilms",
                 "type": {
                   "kind": "OBJECT",
-                  "name": "User",
+                  "name": "FilmsConnection",
                   "ofType": null
                 },
-                "args": [
-                  {
-                    "name": "id",
-                    "type": {
-                      "kind": "NON_NULL",
-                      "name": null,
-                      "ofType": {
-                        "kind": "SCALAR",
-                        "name": "ID"
-                      }
-                    },
-                    "defaultValue": null
-                  }
-                ]
+                "args": []
+              }
+            ]
+          },
+          {
+            "kind": "OBJECT",
+            "name": "FilmsConnection",
+            "fields": [
+              {
+                "name": "totalCount",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "args": []
               },
               {
-                "name": "users",
+                "name": "films",
                 "type": {
                   "kind": "LIST",
                   "name": null,
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "User"
+                    "name": "Film",
+                    "ofType": null
                   }
                 },
                 "args": []
@@ -50,22 +52,19 @@
           },
           {
             "kind": "OBJECT",
-            "name": "User",
+            "name": "Film",
             "fields": [
               {
                 "name": "id",
                 "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "ID"
-                  }
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
                 },
                 "args": []
               },
               {
-                "name": "name",
+                "name": "title",
                 "type": {
                   "kind": "SCALAR",
                   "name": "String",
@@ -74,7 +73,7 @@
                 "args": []
               },
               {
-                "name": "email",
+                "name": "director",
                 "type": {
                   "kind": "SCALAR",
                   "name": "String",
@@ -83,10 +82,10 @@
                 "args": []
               },
               {
-                "name": "age",
+                "name": "releaseDate",
                 "type": {
                   "kind": "SCALAR",
-                  "name": "Int",
+                  "name": "String",
                   "ofType": null
                 },
                 "args": []
