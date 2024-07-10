@@ -81,7 +81,13 @@
                         },
                         "isDeprecated": false,
                         "deprecationReason": null,
-                        "defaultValue": "random"
+                        "defaultValue": "random",
+                        "directives": [
+                            {
+                                "name": "addedSpecialDirective",
+                                "args": {}
+                            }
+                        ]
                     },
                     {
                         "name": "modifiedAt",
@@ -1052,6 +1058,14 @@
                         "defaultValue": "\"No longer supported\""
                     }
                 ]
+            },
+            {
+                "name": "addedSpecialDirective",
+                "description": "A special directive added for testing purposes.",
+                "locations": [
+                    "FIELD_DEFINITION"
+                ],
+                "args": []
             }
         ]
     }
