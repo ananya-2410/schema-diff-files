@@ -23,9 +23,7 @@
                                 "name": "Post",
                                 "ofType": null
                             }
-                        },
-                        "isDeprecated": false,
-                        "deprecationReason": null
+                        }
                     },
                     {
                         "name": "posts",
@@ -787,7 +785,7 @@
                                 }
                             }
                         },
-                        "isDeprecated": false,
+                        "isDeprecated": true,
                         "deprecationReason": null
                     },
                     {
@@ -981,8 +979,8 @@
                     {
                         "name": "INPUT_FIELD_DEFINITION",
                         "description": "Location adjacent to an input object field definition.",
-                        "isDeprecated": true,
-                        "deprecationReason": "testing"
+                        "isDeprecated": false,
+                        "deprecationReason": null
                     }
                 ],
                 "possibleTypes": null
