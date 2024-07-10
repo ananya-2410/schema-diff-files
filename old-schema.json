@@ -92,7 +92,7 @@
                             "ofType": null
                         },
                         "isDeprecated": true,
-                        "deprecationReason": null
+                        "deprecationReason": "random"
                     },
                     {
                         "name": "modifiedAt",
