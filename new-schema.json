@@ -112,7 +112,7 @@
                         "args": [],
                         "type": {
                             "kind": "OBJECT",
-                            "name": "User",
+                            "name": "String",
                             "ofType": null
                         },
                         "isDeprecated": false,
